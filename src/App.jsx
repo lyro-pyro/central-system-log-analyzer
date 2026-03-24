@@ -44,7 +44,17 @@ export default function App() {
           <span className="hl">LATENCY: 14ms</span>
         </div>
         
-        <div className="navbar-logo" style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', top: '16px' }}>
+        <div className="navbar-logo" style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', top: '16px', display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <img 
+            src="/favicon.svg" 
+            alt="Heimdall Logo" 
+            style={{ 
+              height: '32px', 
+              width: '32px', 
+              filter: 'drop-shadow(0 0 8px rgba(255, 77, 41, 0.6))',
+              animation: 'pulse 3s infinite alternate'
+            }} 
+          />
           <h1 style={{ 
             fontFamily: '"Orbitron", "Share Tech Mono", monospace', 
             fontWeight: 700,
