@@ -66,9 +66,9 @@ export default function IocPanel({ iocs }) {
         <button 
           onClick={handleCopy}
           className="analyze-btn" 
-          style={{ width: '100%', height: '40px', marginTop: '12px', background: 'var(--accent-orange)', color: '#000', fontWeight: 'bold' }}
+          style={{ width: '100%', minHeight: '40px', height: 'auto', padding: '10px 12px', marginTop: '12px', background: 'var(--accent-orange)', color: '#000', fontWeight: 'bold', fontSize: '0.85rem', fontFamily: 'var(--font-mono)', letterSpacing: '0.05em', whiteSpace: 'normal', lineHeight: '1.4' }}
         >
-          {copied ? '✓ IOCs COPIED DIRECT TO CLIPBOARD' : '📋 COPY IOCs FOR SIEM / FIREWALL EXPORT'}
+          {copied ? '✓ IOCs COPIED TO CLIPBOARD' : '📋 COPY IOCs FOR SIEM / FIREWALL EXPORT'}
         </button>
       </div>
     </div>
